@@ -12,7 +12,7 @@ USAGE:
         --t_index_list 20,35,45 \
         --height 512 \
         --width 512 \
-        --engine_dir /workspace/ComfyUI/engines/ \
+        --engine_dir /workspace/ComfyUI/models/tensorrt/StreamDiffusion-engines/ \
         --controlnets '[{"model_id": "lllyasviel/control_v11p_sd15_canny"}]' \
         --lora_dict '{"lora1": 0.7}' \
         --ipadapters '[{"type": "regular"}]'

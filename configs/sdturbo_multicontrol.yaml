@@ -28,7 +28,7 @@ acceleration: "tensorrt"    # "xformers" for non-TensorRT setups
 cfg_type: "self"
 
 # Engine directory for TensorRT
-engine_dir: "./engines/sdturbo"
+engine_dir: "/workspace/ComfyUI/models/tensorrt/StreamDiffusion-engines/"
 
 # Enable ControlNet (no IPAdapter for maximum speed)
 use_controlnet: true

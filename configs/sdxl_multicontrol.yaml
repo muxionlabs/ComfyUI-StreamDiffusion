@@ -3,7 +3,6 @@
 
 # Base model configuration
 model_id: "stabilityai/stable-diffusion-xl-base-1.0"
-# model_id: "C:\\_dev\\models\\your_sdxl_model.safetensors"
 
 # StreamDiffusion core parameters
 t_index_list: [20, 32]      # SDXL optimized timesteps
@@ -39,7 +38,7 @@ cfg_type: "self"
 safety_checker: false
 
 # Engine directory for TensorRT
-engine_dir: "./engines/sdxl"
+engine_dir: "/workspace/ComfyUI/models/tensorrt/StreamDiffusion-engines/"
 
 # Enable multi-modal conditioning
 use_controlnet: true
@@ -47,9 +46,9 @@ use_ipadapter: true
 
 # IPAdapter configuration for SDXL style conditioning
 ipadapters:
-  - ipadapter_model_path: "h94/IP-Adapter/sdxl_models/ip-adapter_sdxl.safetensors"
-    image_encoder_path: "h94/IP-Adapter/sdxl_models/image_encoder"
-    style_image: "path/to/your/style/image.jpg"
+  - ipadapter_model_path: "/workspace/ComfyUI/models/ipadapter/ip-adapter_sdxl.safetensors"
+    image_encoder_path: "/workspace/ComfyUI/models/ipadapter/image_encoder"
+    style_image: "/workspace/ComfyUI/custom_nodes/ComfyUI-StreamDiffusion/assets/style.jpg"
     scale: 1.3
     enabled: true
 

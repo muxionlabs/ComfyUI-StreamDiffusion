@@ -36,7 +36,7 @@
       "ipadapter_enabled": true,
       "use_controlnet": true,
       "num_image_tokens": 16,
-      "engine_dir": "/workspace/ComfyUI/engines/",
+      "engine_dir": "/workspace/ComfyUI/models/tensorrt/StreamDiffusion-engines/",
       "device": "cuda",
       "dtype": "float16",
       "use_tiny_vae": true,
