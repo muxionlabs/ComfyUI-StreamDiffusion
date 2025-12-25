@@ -47,8 +47,8 @@ use_ipadapter: true
 
 # IPAdapter configuration for style conditioning
 ipadapters:
-  - ipadapter_model_path: "/workspace/ComfyUI/models/ipadapter/ip-adapter-plus_sd15.bin"
-    image_encoder_path: "/workspace/ComfyUI/models/ipadapter/image_encoder"
+  - ipadapter_model_path: "h94/IP-Adapter-FaceID/ip-adapter-faceid_sd15.bin"
+    image_encoder_path: "h94/IP-Adapter/models/image_encoder"
     style_image: "/workspace/ComfyUI/custom_nodes/ComfyUI-StreamDiffusion/assets/style.jpg"
     scale: 0.7
     enabled: true
