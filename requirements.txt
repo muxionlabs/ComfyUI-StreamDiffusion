@@ -18,6 +18,7 @@ protobuf==4.25.3
 colored==2.2.4
 onnx-graphsurgeon==0.5.8
 controlnet-aux==0.0.10
+streamdiffusion[tensorrt] @ git+https://github.com/muxionlabs/StreamDiffusion.git@prakarsh/fix/comfyuiport
 
 # Extras and critical dependencies
 diffusers-ipadapter @ git+https://github.com/livepeer/Diffusers_IPAdapter.git@405f87da42932e30bd55ee8dca3ce502d7834a99
