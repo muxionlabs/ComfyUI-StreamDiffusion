@@ -19,7 +19,7 @@ comfy node install streamdiffusion
 ### Manual Installation
 Clone this repository into your ComfyUI custom nodes directory:
 ```
-git clone https://github.com/RUFFY-369/ComfyUI-StreamDiffusion.git
+git clone https://github.com/muxionlabs/ComfyUI-StreamDiffusion.git
 ```
 Install dependencies:
 ```
@@ -52,8 +52,8 @@ To use these workflows:
 - ComfyUI >= 1.0.0
 
 ## Support & Documentation
-- [Documentation (README)](https://github.com/RUFFY-369/ComfyUI-StreamDiffusion#readme)
-- [Bug Tracker](https://github.com/RUFFY-369/ComfyUI-StreamDiffusion/issues)
+- [Documentation (README)](https://github.com/muxionlabs/ComfyUI-StreamDiffusion#readme)
+- [Bug Tracker](https://github.com/muxionlabs/ComfyUI-StreamDiffusion/issues)
 
 ## License
 This project is licensed under the terms of the [Apache License 2.0](LICENSE), the same as the original StreamDiffusion repository.

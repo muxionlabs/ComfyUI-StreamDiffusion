@@ -4,10 +4,10 @@ Build TensorRT engines for StreamDiffusion pipelines (standalone script)
 USAGE:
 ------
 1. With a YAML/JSON config file (recommended):
-    python build_tensorrt.py --config my_pipeline.yaml
+    python build_tensorrt_engines.py --config my_pipeline.yaml
 
 2. With command-line arguments (overrides config file if both are used):
-    python build_tensorrt.py \
+    python build_tensorrt_engines.py \
         --model_id stabilityai/sd-turbo \
         --t_index_list 20,35,45 \
         --height 512 \
