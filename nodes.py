@@ -108,16 +108,7 @@ class ControlNetTRTConfig:
                 "enabled": True,
                 "num_image_tokens": kwargs["num_image_tokens"],
             })
-        else:
-            # If explicitly disabled, add a config with enabled=False for clarity
-            ipadapter_config.append({
-                "ipadapter_model_path": kwargs["ipadapter_model_path"],
-                "image_encoder_path": kwargs["image_encoder_path"],
-                "style_image": kwargs["style_image"],
-                "scale": kwargs["ipadapter_scale"],
-                "enabled": False,
-                "num_image_tokens": kwargs["num_image_tokens"],
-            })
+        # If not enabled, do NOT append anything (leave ipadapters empty)
 
         # Parse lora_dict_str (JSON) to dict, with error handling
         lora_dict_str = kwargs.get("lora_dict_str", "").strip()
