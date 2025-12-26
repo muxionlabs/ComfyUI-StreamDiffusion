@@ -47,7 +47,7 @@ class ControlNetTRTConfig:
                 "ipadapter_enabled": ("BOOLEAN", {"default": True}),
                 # ControlNet switch
                 "use_controlnet": ("BOOLEAN", {"default": True, "tooltip": "Enable or disable ControlNet conditioning."}),
-                "num_image_tokens": ("INT", {"default": 16, "min": 1, "max": 256, "tooltip": "Number of image tokens for conditioning."}),
+                "num_image_tokens": ("INT", {"default": 4, "min": 1, "max": 256, "tooltip": "Number of image tokens for conditioning."}),
                 # Additional config fields for TRT
                 "engine_dir": ("STRING", {"default": "/workspace/ComfyUI/engines/", "tooltip": "Directory for TensorRT engine files."}),
                 "device": ("STRING", {"default": "cuda", "tooltip": "Device to run inference on (e.g., cuda, cpu)."}),

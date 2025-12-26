@@ -27,7 +27,7 @@ guidance_scale: 1.1
 num_inference_steps: 50
 seed: 789
 lora_dict:
-  "/workspace/ComfyUI/models/loras/SD1.5/PixelArt.safetensors": 1.2
+  "artificialguybr/pixelartredmond-1-5v-pixel-art-loras-for-sd-1-5": 1.2
 
 # Temporal consistency and optimization
 frame_buffer_size: 1
@@ -47,11 +47,12 @@ use_ipadapter: true
 
 # IPAdapter configuration for style conditioning
 ipadapters:
-  - ipadapter_model_path: "h94/IP-Adapter-FaceID/ip-adapter-faceid_sd15.bin"
+  - ipadapter_model_path: "h94/IP-Adapter/models/ip-adapter_sd15.bin"
     image_encoder_path: "h94/IP-Adapter/models/image_encoder"
     style_image: "/workspace/ComfyUI/custom_nodes/ComfyUI-StreamDiffusion/assets/style.jpg"
     scale: 0.7
     enabled: true
+    num_image_tokens: 4
 
 # ControlNet configurations
 controlnets:
