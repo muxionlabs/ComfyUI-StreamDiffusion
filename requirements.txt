@@ -2,7 +2,7 @@
 # Core dependencies
 torch
 torchvision
-xformers==0.0.30
+xformers
 diffusers @ git+https://github.com/varshith15/diffusers.git@3e3b72f557e91546894340edabc845e894f00922
 transformers==4.56.0
 accelerate==1.10.0
