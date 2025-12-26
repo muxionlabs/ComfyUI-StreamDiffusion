@@ -1,0 +1,150 @@
+{
+  "1": {
+    "inputs": {
+      "image": "Chinese Woman.jpeg"
+    },
+    "class_type": "PrimaryInputLoadImage",
+    "_meta": {
+      "title": "Primary Input Image"
+    }
+  },
+  "2": {
+    "inputs": {
+      "images": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "6": {
+    "inputs": {
+      "image": "style1.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "47": {
+    "inputs": {
+      "config": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "ControlNetTRTModelLoader",
+    "_meta": {
+      "title": "ControlNet + TRT Model Loader"
+    }
+  },
+  "52": {
+    "inputs": {
+      "model_id": "stabilityai/sd-turbo",
+      "controlnet_model_id": "thibaud/controlnet-sd21-canny-diffusers",
+      "conditioning_scale": 0.3,
+      "preprocessor": "canny",
+      "low_threshold": 100,
+      "high_threshold": 200,
+      "height": 512,
+      "width": 512,
+      "t_index_list": "0",
+      "frame_buffer_size": 1,
+      "warmup": 10,
+      "acceleration": "tensorrt",
+      "use_denoising_batch": true,
+      "do_add_noise": true,
+      "enable_similar_image_filter": false,
+      "similar_image_filter_threshold": 1,
+      "similar_image_filter_max_skip_frame": 10,
+      "use_safety_checker": false,
+      "seed": 646,
+      "num_inference_steps": 4,
+      "use_lcm_lora": true,
+      "lora_dict_str": "",
+      "prompt": "masterpiece, high quality, detailed anime character",
+      "negative_prompt": "blurry, low quality, distorted, 3d render",
+      "guidance_scale": 1.1,
+      "ipadapter_model_path": "",
+      "image_encoder_path": "",
+      "ipadapter_scale": 0.7,
+      "ipadapter_enabled": false,
+      "use_controlnet": true,
+      "num_image_tokens": 4,
+      "engine_dir": "/workspace/ComfyUI/models/tensorrt/StreamDiffusion-engines/",
+      "device": "cuda",
+      "dtype": "float16",
+      "use_tiny_vae": true,
+      "cfg_type": "self",
+      "delta": 0.7,
+      "compile_engines_only": false,
+      "style_image": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "ControlNetTRTConfig",
+    "_meta": {
+      "title": "ControlNet + TRT Config"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "an anime render of a girl with purple hair, masterpiece, pixel art, PixArFK",
+      "negative_prompt": "blurry, low quality, distorted, 3d render",
+      "guidance_scale": 1.1,
+      "num_inference_steps": 4,
+      "delta": 0.7,
+      "t_index_list": "0",
+      "controlnet_model_id": "thibaud/controlnet-sd21-canny-diffusers",
+      "conditioning_scale": 0.4,
+      "controlnet_enabled": true,
+      "preprocessor": "canny",
+      "conditioning_channels": 0,
+      "weight_type": "",
+      "image_path": "",
+      "ipadapter_enabled": false,
+      "ipadapter_scale": 0.2,
+      "ipadapter_model_path": "",
+      "image_encoder_path": "",
+      "num_image_tokens": 4,
+      "style_image_path": "",
+      "ipadapter_weight_type": "",
+      "normalize_prompt_weights": false,
+      "normalize_seed_weights": false,
+      "image_preprocessing_config": "",
+      "image_postprocessing_config": "",
+      "latent_preprocessing_config": "",
+      "latent_postprocessing_config": "",
+      "canny_low_threshold": 0,
+      "canny_high_threshold": 0,
+      "depth_model_name": "",
+      "depth_detect_resolution": 0,
+      "depth_image_resolution": 0,
+      "hed_safe": false,
+      "lineart_coarse": false,
+      "lineart_anime_style": false,
+      "sharpen_intensity": 0,
+      "sharpen_unsharp_radius": 0,
+      "sharpen_edge_enhancement": 0,
+      "sharpen_detail_boost": 0,
+      "sharpen_noise_reduction": 0,
+      "sharpen_multi_scale": false,
+      "model": [
+        "47",
+        0
+      ],
+      "input_image": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "ControlNetTRTStreamingSampler",
+    "_meta": {
+      "title": "ControlNet + TRT Streaming Sampler"
+    }
+  }
+}

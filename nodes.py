@@ -40,11 +40,11 @@ class ControlNetTRTConfig:
                 "negative_prompt": ("STRING", {"default": "blurry, low quality, distorted, 3d render", "multiline": True, "tooltip": "Text prompt specifying undesired aspects to avoid in the generated image."}),
                 "guidance_scale": ("FLOAT", {"default": 1.1, "min": 0.1, "max": 20.0, "step": 0.01, "tooltip": "Controls the strength of the guidance. Higher values make the image more closely match the prompt."}),
                 # IPAdapter fields
-                "ipadapter_model_path": ("STRING", {"default": "/workspace/ComfyUI/models/ipadapter/ip-adapter-plus_sd15.bin"}),
-                "image_encoder_path": ("STRING", {"default": "/workspace/ComfyUI/models/ipadapter/image_encoder"}),
+                "ipadapter_model_path": ("STRING", {"default": ""}),
+                "image_encoder_path": ("STRING", {"default": ""}),
                 "style_image": ("IMAGE", {"tooltip": "Style image for IPAdapter conditioning."}),
                 "ipadapter_scale": ("FLOAT", {"default": 0.7, "min": 0.0, "max": 2.0, "step": 0.01}),
-                "ipadapter_enabled": ("BOOLEAN", {"default": True}),
+                "ipadapter_enabled": ("BOOLEAN", {"default": False}),
                 # ControlNet switch
                 "use_controlnet": ("BOOLEAN", {"default": True, "tooltip": "Enable or disable ControlNet conditioning."}),
                 "num_image_tokens": ("INT", {"default": 4, "min": 1, "max": 256, "tooltip": "Number of image tokens for conditioning."}),
