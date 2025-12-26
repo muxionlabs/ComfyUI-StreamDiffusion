@@ -5,7 +5,7 @@
 model_id: "stabilityai/sd-turbo"
 
 # StreamDiffusion core parameters  
-t_index_list: [0, 16]       # SD-Turbo optimized timesteps
+t_index_list: [0]       # SD-Turbo optimized timesteps
 width: 512
 height: 512
 device: "cuda"
