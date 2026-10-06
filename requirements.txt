@@ -3,7 +3,7 @@
 torch
 torchvision
 xformers==0.0.32.post2
-diffusers @ git+https://github.com/varshith15/diffusers.git@3e3b72f557e91546894340edabc845e894f00922
+diffusers>=0.39.0
 transformers==4.56.0
 accelerate==1.10.0
 huggingface_hub==0.35.0
@@ -14,13 +14,13 @@ onnx==1.18.0
 onnxruntime==1.23.2
 onnxruntime-gpu==1.23.2
 polygraphy==0.49.24
-protobuf==4.25.3
+protobuf>=6.31.1
 colored==2.2.4
 onnx-graphsurgeon==0.5.8
 controlnet-aux==0.0.10
-streamdiffusion[tensorrt] @ git+https://github.com/muxionlabs/StreamDiffusion.git@prakarsh/fix/comfyuiport
+streamdiffusion[tensorrt] @ git+https://github.com/muxionlabs/StreamDiffusion.git@233f866ab068278539cb0149d7ea1e2af5487467
 
 # Extras and critical dependencies
 diffusers-ipadapter @ git+https://github.com/livepeer/Diffusers_IPAdapter.git@405f87da42932e30bd55ee8dca3ce502d7834a99
-mediapipe==0.10.21
+# mediapipe==0.10.21 requires protobuf<5, which cannot sit next to protobuf>=6.31.1.
 insightface==0.7.3
