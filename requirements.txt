@@ -18,7 +18,7 @@ protobuf>=6.31.1
 colored==2.2.4
 onnx-graphsurgeon==0.5.8
 controlnet-aux==0.0.10
-streamdiffusion[tensorrt] @ git+https://github.com/muxionlabs/StreamDiffusion.git@bfcfd10db18d083aeaf2dcfa0be34cd44f127608
+streamdiffusion[tensorrt] @ git+https://github.com/muxionlabs/StreamDiffusion.git@233f866ab068278539cb0149d7ea1e2af5487467
 
 # Extras and critical dependencies
 diffusers-ipadapter @ git+https://github.com/livepeer/Diffusers_IPAdapter.git@405f87da42932e30bd55ee8dca3ce502d7834a99
